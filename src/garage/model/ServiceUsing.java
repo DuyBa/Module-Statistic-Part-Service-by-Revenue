@@ -1,0 +1,76 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package garage.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+/**
+ *
+ * @author ruy_pa_
+ */
+public class ServiceUsing implements Serializable{
+    
+    private int id;
+    private Date date;
+    private int quantity;
+    private int price;
+    private Service service;
+
+    public ServiceUsing() {
+    }
+
+    public ServiceUsing(int id, Date date, int quantity, int price, Service service) {
+        this.id = id;
+        this.date = date;
+        this.quantity = quantity;
+        this.price = price;
+        this.service = service;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public Service getService() {
+        return service;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
+    
+    
+    
+}
